@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenWear - Your Life, Connected</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="f1">
+    <img src="logo.png" alt="GenWear Logo">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#revenue">Revenue</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <div class="f2">
+      <div id="panel">
+        <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#revenue">Revenue</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>GenWear – Your Life, Connected.</h1>
+      <p>The GenWear Hand Belt is an innovative smart wearable for students and institutions. Designed for safety, attendance, and digital identity — all from your wrist.</p>
+      <button onclick="scrollToAbout()">Learn More</button>
+    </div>
+    <!-- <img src="Gemini-image.png" alt="GenWear Image"> -->
+    <div class="circle">
+    <img src="image=1.jfif" alt="Photo 1" class="item item1">
+    <img src="image=2.jpg" alt="Photo 2" class="item item2">
+    <img src="image=3.jpg" alt="Photo 3" class="item item3">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About GenWear</h2>
+    <p>GenWear is a stylish and smart band designed for students and all generations. With a built-in QR code, it connects wearers to their digital identity, educational resources, and health information instantly. It combines technology and fashion to create a seamless experience for users and institutions alike.</p>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-boxes">
+      <div class="feature">
+        <h3>Student Mode</h3>
+        <p>Tracks attendance, aid, and connects to educational platforms.</p>
+      </div>
+      <div class="feature">
+        <h3>Senior Mode</h3>
+        <p>Includes emergency contacts, health stats, and medication reminders.</p>
+      </div>
+      <div class="feature">
+        <h3>Family Sync</h3>
+        <p>Share fitness goals, location check-ins, and event invites easily.</p>
+      </div>
+      <div class="feature">
+        <h3>Custom QR</h3>
+        <p>Each band has a unique QR code linked to a personal digital profile.</p>
+      </div>
+    </div> 
+  </section>
+
+  <section id="revenue" class="revenue">
+    <h2>Revenue Model</h2>
+    <ul>
+      <li><strong>Product Sales:</strong> Smartbands for schools, ₹150–₹400 each.</li>
+      <li><strong>Customization:</strong> School logos, student names, or color variants.</li>
+      <li><strong>Subscription Platform:</strong> Dashboards for attendance & aid tracking.</li>
+      <li><strong>Government & CSR Contracts:</strong> Large-scale orders from education departments.</li>
+      <li><strong>Lifestyle Expansion:</strong> Retail models for young professionals (₹499–₹999).</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@genwear.com | Phone: +91 98765 43210</p>
+    <p>© 2025 GenWear. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToAbout() {
+      document.getElementById("about").scrollIntoView({behavior: "smooth"});
+    }
+
+    $(document).ready(function () {
+      $('#menu-toggle').click(function () {
+        $('#panel').toggle();
+      });
+    });
+
+  </script>
+</body>
+</html>

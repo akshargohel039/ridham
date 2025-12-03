@@ -279,25 +279,11 @@ footer p {
   color: #ccc;
 }
 
-.circle {
-  position: relative;
-  width: 250px;
-  margin-right: 13%;
-  height: 250px;
-  animation: rotate 8s linear infinite;
-  transform-style: preserve-3d;
+.circle img{
+  height: 500px;
+  width: 400px;
 }
 
-.circle img {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.5);
-  border: 3px solid #00ffaa;
-  transition: transform 0.3s ease;
-}
 
 /* Position each image at a circular angle */
 .item1 {
@@ -312,16 +298,7 @@ footer p {
   transform: rotateY(240deg) translateZ(200px);
 }
 
-/* Rotation animation */
-@keyframes rotate {
-  0% {
-    transform: rotateY(0deg);
-  }
 
-  100% {
-    transform: rotateY(360deg);
-  }
-}
 
 /* Responsive */
 @media (max-width: 768px) {

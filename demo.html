@@ -1,55 +1,147 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>GONWEAR Smart Band</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    .features {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .features li {
+      margin-bottom: 6px;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+    }
+  </style>
 </head>
 <body>
-    <script>
-      async  function my(){
-            document.write("A")
-             await  document.write("B")
-                  document.write("C") 
-                  
-        }
-        my()
-           document.write("D")
-              document.write("E")
-    </script>
-</body>
-</html> -->
 
-<!DOCTYPE html>
-<html>
-<body>
-<h1>JavaScript Promise Object</h1>
-<h2>The then() Method</h2>
+  <h1>GenWear Smart Band</h1>
 
-<p id="demo"></p>
+  <div class="product-container">
 
-<script>
-function myDisplayer(some) {
-  document.getElementById("demo").innerHTML = some;
-}
+    <!-- Card 1 -->
+     <div class="card">
+      <img src="product-3.png" alt="GenWear White Band">
+      <div class="price">₹2,499 <span class="old-price">₹2,799</span></div>
+      <ul class="features">
+        <li>✔ Stylish white design</li>
+        <li>✔ Fitness & sleep tracking</li>
+        <li>✔ Touch display</li>
+        <li>✔ Fast charging</li>
+      </ul>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+    
 
-let myPromise = new Promise(function(myResolve, myReject) {
-  let x = 0;
+    <!-- Card 2 -->
+     <div class="card">
+      <img src="product-1.png" alt="GenWear Metal Band">
+      <div class="price">₹2,799 <span class="old-price">₹3,999</span></div>
+      <ul class="features">
+        <li>✔ Premium metal strap</li>
+        <li>✔ Heart rate & sleep tracking</li>
+        <li>✔ AMOLED display</li>
+        <li>✔ 7 days battery life</li>
+      </ul>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+    
 
-// some code (try to change x to 5)
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="product-2.png" alt="GenWear Black Band">
+      <div class="price">₹2,599 <span class="old-price">₹3,499</span></div>
+      <ul class="features">
+        <li>✔ Lightweight silicone strap</li>
+        <li>✔ Step & calorie tracking</li>
+        <li>✔ Water resistant</li>
+        <li>✔ 10 days battery life</li>
+      </ul>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
 
-  if (x == 0) {
-    myResolve("OK");
-  } else {
-    myReject("Error");
-  }
-});
-
-myPromise.then(
-  function(value) {myDisplayer(value);},
-  function(error) {myDisplayer(error);}
-);
-</script>
+  </div>
 
 </body>
 </html>

@@ -241,6 +241,86 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+
+
+h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    .features-card {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .features-card li {
+      margin-bottom: 6px;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+    }
+
+
 /* Revenue */
 .revenue {
   padding: 100px 80px;
